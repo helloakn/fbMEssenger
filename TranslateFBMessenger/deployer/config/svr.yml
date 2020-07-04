@@ -1,0 +1,14 @@
+translate.jual.vip:
+  hostname: translate.jual.vip
+  user: root
+  port: 22
+  identityFile: ~/svr/key.pem
+  forwardAgent: true
+  multiplexing: true
+  sshOptions:
+    UserKnownHostsFile: /dev/null
+    StrictHostKeyChecking: no
+  stage: production
+  roles:
+    - hook
+  deploy_path: /var/www/html/translate/hook
